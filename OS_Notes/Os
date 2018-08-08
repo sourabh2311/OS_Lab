@@ -137,4 +137,3 @@ Semantics : Stores 1 in Ri if the value stored in Ri is less than/greater than/e
 Ri/Rj may be any register except IP. 
 Syntax : JZ Ri, target_address
 Semantics : Jumps to target_address if the contents of Ri is zero.
-CHANGED
