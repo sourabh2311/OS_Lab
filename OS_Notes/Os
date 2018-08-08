@@ -131,4 +131,9 @@ Semantics : Transfers the contents of register Rj to port Pi.
 Semantics: Transfers the contents of P1 to the standard output immediately. 
 Syntax : HALT
 Semantics : This instruction causes the machine to halt immediately.
-
+LT, GT, EQ, NE, GE, LE
+Syntax : OP Ri, Rj
+Semantics : Stores 1 in Ri if the value stored in Ri is less than/greater than/equal to/not equal to/greater than or equal to/less than or equal to that in Rj. Ri is set to 0 otherwise.
+Ri/Rj may be any register except IP. 
+Syntax : JZ Ri, target_address
+Semantics : Jumps to target_address if the contents of Ri is zero.
